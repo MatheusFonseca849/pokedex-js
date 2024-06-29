@@ -1,0 +1,33 @@
+:root{
+    --color-blue: #4C6EF5;
+    --color-grey-100: #212529;
+    --color-grey-300: #343A40;
+    --color-grey-500: #7C8B99;
+    --color-grey-600: #ADB5BD;
+    --color-grey-800: #CED4DA;
+    --color-grey-900: #DEE2E6;
+
+    --font-size-title: 1.5rem;
+    --font-size-text: 1.25rem;
+
+    --gap-main: 4.5rem;
+    --gap-poke-list: 2rem;
+    --gap-header: 2.25rem;
+    --gap-list: 1rem;
+    --gap-search-form: 1rem;
+    --gap-card: 0.75rem;
+
+    --padding-main: 1.5rem 2rem;
+    --padding-input: 0.8rem;
+    --padding-card: 0 0.8rem;
+    
+
+    --radius-default: 8px;
+  }
+
+  .darkMode{
+    --color-grey-100: #DEE2E6; 
+    --color-grey-900: #212529;
+    --color-grey-800: #343A40;
+    --color-grey-300: #CED4DA;
+  }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e438570a4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/styles/globals.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="icon" href="./src/assets/Poké_Ball_icon.png">
+    <title>Pokedex</title>
+</head>
+<body id="body">
+    <main>
+      <header>
+        <img id="home" src="./src/assets/pokeapi.png" alt="home">
+  
+        <form class="search__container">
+          <input class="search__input" type="text" placeholder="Pesquisar por...">
+          <button id="search-button" class="search__button btn"><img src="./src/assets/search-icon.png" alt="search"></button>
+          <button class="favList__button btn"><i class="fa-solid fa-star"></i></button>
+          <button id="darkModeBtn" class="btn"><i class="fa-solid fa-moon"></i></button>
+        </form>
+      </header>
+      <section class="poke__list--container">
+        <h1>Lista de pokémon</h1>
+        <ul class="poke__list">
+        </ul>
+        <div class="navButtons__container">
+          <button class="navButton previous"><i class="fa-solid fa-circle-chevron-left fa-xl"></i></button>
+          <button class="navButton next"><i class="fa-solid fa-circle-chevron-right fa-xl"></i></button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./src/scripts/index.js"></script>
+    <script type="module" src="./src/scripts/favorite.js"></script>
+    <script type="module" src="./src/scripts/requests.js"></script>
+    <script type="module" src="./src/scripts/darkMode.js"></script>
+</html>

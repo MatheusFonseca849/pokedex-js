@@ -1,0 +1,164 @@
+body {
+    background-color: var(--color-grey-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-main);
+    padding: var(--padding-main);
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-header);
+}
+
+#home{
+    cursor: pointer;
+}
+
+.search__container {
+    display: flex;
+    gap: var(--gap-search-form);
+}
+
+.search__input {
+    padding: var(--padding-input);
+    background-color: var(--color-grey-300);
+    color: var(--color-grey-500);
+    border-radius: var(--radius-default);
+}
+
+.btn{
+    width: 60px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-default);
+    cursor: pointer;
+    background-color: var(--color-grey-300);
+    color: var(--color-grey-900);
+}
+
+.search__button {
+
+    background-color: var(--color-blue);
+ 
+}
+
+.poke__list--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-poke-list);
+    padding-bottom: 1.5rem;
+}
+
+.poke__list--container>h1 {
+    color: var(--color-grey-900);
+    font-size: var(--font-size-title);
+}
+
+.poke__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-list);
+    width: 100%;
+    height: fit-content;
+}
+
+.poke__list--card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    padding: var(--padding-card);
+    border-radius: var(--radius-default);
+    gap: var(--gap-card);
+    background-color: var(--color-grey-300);
+    color: var(--color-grey-800);
+}
+
+.poke__list--card:hover {
+    transition: 0.3s;
+    background-color: var(--color-grey-500);
+}
+
+.poke__list--card img {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.navButtons__container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background-color: var(--color-grey-300);
+    border-radius: var(--radius-default);
+    cursor: pointer;
+    color: var(--color-grey-900);
+}
+
+.favButton{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey-200);
+    color: var(--color-grey-900);
+    border-radius: var(--radius-default);
+    cursor: pointer;
+}
+
+.favButton:hover{
+    background-color: var(--color-grey-300);
+}
+
+.loading {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-grey-600);
+    font-size: var(--font-size-title);
+}
+
+.hidden {
+    display: none;
+}
+
+@media(min-width: 950px) {
+    main {
+        width: 70%;
+    }
+    header {
+        flex-direction: row;
+    }
+}
